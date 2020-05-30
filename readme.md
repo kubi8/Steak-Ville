@@ -1,7 +1,7 @@
 # Steak Ville Restaurant Landing Page
 
-*scss
-*js
-*jquery
-*gsap
-*google maps
+* scss
+* js
+* jquery
+* gsap
+* google maps
