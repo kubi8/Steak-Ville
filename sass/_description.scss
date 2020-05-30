@@ -1,0 +1,74 @@
+.description{
+    flex-basis: 40vh;
+    width: 100%;
+    background: $bg-color9;
+    padding: 4%;
+&__border{
+    border: 2px double $main-color1;
+    padding: 10%;
+    position: relative;
+    z-index: 1;
+}
+&__square1, &__square2{
+    position: absolute;
+    border-radius: 2%;
+    width: 24vh;
+    height: 32vh;
+    background: $main-color1;
+    z-index: -1;
+@media (min-width: 768px){
+    width: 30vw;
+    height: 40vw;
+
+}
+@media (orientation: landscape){
+    width: 30vw;
+    height: 40vw;
+}
+}
+&__square1{
+    bottom: 30vh;
+    left: 10vh;
+@media (orientation: landscape){
+    bottom: 14vh;
+    height: 30vw;
+    width: 40vw;
+}
+@media (min-width: 768px){
+    bottom: 10vh;
+    height: 30vw;
+    width: 40vw;
+}
+@media (min-width: 1280px){
+    bottom: 5vh;
+    height: 30vh;
+}
+}
+&__square2{
+    bottom: 14vh;
+    right: 10vh;
+@media (min-width: 1280px){
+    bottom: 5vh;
+    width: 30vw;
+    height: 40vh;
+}
+}
+&__text{
+    text-align: justify;
+    margin-top: 10%;
+    z-index: 3;
+}
+&__h2{
+    font-family: wildYouth;
+    color: $main-color1;
+    font-size: 3rem;
+}
+&__h3{
+    font-family: inherit;
+    font-size: 3rem;
+    letter-spacing: 5px;
+@media (min-width: 460px){
+    font-size: 3.5rem;
+}
+}
+}

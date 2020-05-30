@@ -1,0 +1,72 @@
+.comments{
+    flex-basis: 40vh;
+    width: 100%;
+    background: $bg-color7;
+    padding: 15px;
+    @include flex;
+
+&__h3{
+    padding: 0 0 2% 0;
+    color: $main-color1;
+    width: 320px;
+    text-align: center;
+&::before{
+    content: "\002190";
+    margin: 0 2% 0 0;
+}
+&::after{
+    content: "\002192";
+    margin: 0 0 0 2%;
+}
+}
+&__sliderContent{
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+}
+&__slider{
+    width: 100%;
+    max-width: 1200px;
+    height: 340px;
+    color: $main-color1;
+    margin: 10px;
+    overflow: hidden;
+
+&--container{
+    display: flex;
+    width: 300%;
+    animation: 20s sliderThreeImages infinite alternate linear;
+}
+}
+}
+.container__comment{
+    width: 300%;
+    padding: 2% 5% 0 5%;
+    font-size: 1rem;
+    text-align: justify;
+}
+.fa-comments{
+    color: $main-color1;
+    display: none;
+@media (min-width: 640px){
+    display: block;
+}
+}
+.fas1{
+    margin: 25% 0 0 0;
+    color: $main-color1;
+}
+@keyframes sliderThreeImages {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%, 70%{
+        transform: translateX(-33.333%);
+    }
+    75%, 100%{
+        transform: translateX(-66.666%);
+    }
+}

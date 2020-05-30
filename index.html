@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e31d6c9afd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ModifiersPlugin.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="address">New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG
+        <div class="address__icons">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    <nav class="navFirst">
+        <img class="navFirst__image" src="img/logo1.png">
+        <ul class="navFirst__list">
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Home</a></li>
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Reservations</a></li>
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Menu</a></li>
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Blog</a></li>
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Features</a></li>
+            <li class="navFirst__list--pos"><a href="#" class="navFirst__list--a">Contact</a></li>
+        </ul>
+        <nav class="navFirst__modal">
+            <ul class="navFirst__modal--list">
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Home</a></li>
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Reservations</a></li>
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Menu</a></li>
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Blog</a></li>
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Features</a></li>
+                <li class="navFirst__modal--pos"><a class="navFirst__modal--a" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="navFirst__btn">
+            <span class="navFirst__btn--hamb"></span>
+            <span class="navFirst__btn--hamb"></span>
+            <span class="navFirst__btn--hamb"></span>
+        </button>
+    </nav>
+    <header class="header">
+        <h2 class="header__h2">Welcome to</h2>
+        <h1 class="header__h1">Steakville Restaurant</h1>
+        <h4 class="header__h4">New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</h4>
+        <i class="demo-icon icon-restaurant">&#xe832;</i>
+        <a class="header__btn menu" href="#scroll" id="menu1">Menu</a>
+        <i class="demo-icon icon-bell">&#xe800;</i>
+    </header>
+    <nav class="navSecond">
+        <img src="img/logo.png" alt="logo" class="navSecond__img">
+        <ul class="navSecond__list">
+            <li><a class="navSecond__list--a" href="#">Home</a></li>
+            <li><a class="navSecond__list--a" href="#">Reservations</a></li>
+            <li><a class="navSecond__list--a" href="#">Menu</a></li>
+            <li><a class="navSecond__list--a" href="#">Blog</a></li>
+            <li><a class="navSecond__list--a" href="#">Features</a></li>
+            <li><a class="navSecond__list--a" href="#">Contact</a></li>
+        </ul>
+        <button class="navFirst__btn">
+                <span class="navFirst__btn--hamb"></span>
+                <span class="navFirst__btn--hamb"></span>
+                <span class="navFirst__btn--hamb"></span>
+        </button>
+    </nav>
+    <section class="ad">
+        <div class="ad__slider">
+            <div class="slider__content">
+                <img src="img/slider1.jpg" alt="" class="slider--pic">
+                <img src="img/slider2.jpg" alt="" class="slider--pic">
+                <img src="img/slider3.jpg" alt="" class="slider--pic">
+                <img src="img/slider4.jpg" alt="" class="slider--pic">
+            </div>
+        </div>
+        <a class="ad__btn menu" href="#scroll" id="menu2">Menu</a>
+        <p class="ad__text">Welcome to the<br> Steakville&nbsp;Restaurant</p>
+    </section>
+    <section class="links">
+        <div class="links__social">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    <nav class="navThird">
+        <ul class="navThird__list1">
+            <li><a href="#" class="list1__position">Home</a></li>
+            <li><a href="#" class="list1__position">Reservations</a></li>
+            <li><a href="#" class="list1__position">Menu</a></li>
+        </ul>
+        <img src="img/logo1.png" alt="logo" class="navThird__img">
+        <ul class="navThird__list2">
+            <li><a href="#" class="list2__position">Blog</a></li>
+            <li><a href="#" class="list2__position">Features</a></li>
+            <li><a href="#" class="list2__position">Contact</a></li>
+        </ul>
+        <section class="navThird__bigMenu">
+            <ul class="navThird__list3-1">
+                <li><a href="#" class="list3__position">Home</a></li>
+                <li><a href="#" class="list3__position">Reservations</a></li>
+                <li><a href="#" class="list3__position">Menu</a></li>
+            </ul>
+            <img src="img/logo1.png" alt="logo" class="navThird__img--bigMenu">
+            <ul class="navThird__list3-2">
+                <li><a href="#" class="list3__position">Blog</a></li>
+                <li><a href="#" class="list3__position">Features</a></li>
+                <li><a href="#" class="list3__position">Contact</a></li>
+            </ul>
+        </section>
+        <section class="navThird__main">
+            <aside class="navThird__social">
+                <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            </aside>
+            <article class="navThird__organic">
+                <section class="navThird__organic--ad">
+                    <section class="navThird__organic--inside-ad">
+                        <h2 class="inside-ad__h2">Organic Food</h2>
+                        <i class="fas fa-carrot"></i>
+                        <p class="inside-ad__text">
+                                Just like your table at home, we strive to provide organic and healthy food we can be proud of.
+                                Whenever possible we use organic and locally grown food.
+                        </p>
+                        <a class="navThird__btn menu" href="#scroll"id="menu3">Menu</a>
+                    </section>
+                </section>
+        </section>
+    </nav>
+    <section class="description">
+        <div class="description__border">
+            <div class="description__square1"></div>
+            <div class="description__square2"></div>
+            <h2 class="description__h2">Welcome to</h2>
+            <h3 class="description__h3">Steakville</h3>
+            <p class="description__text">Our restaurant has a frequently changing menu revolving around the freshest, seasonal ingredients and the best of British produce. Dishes range from house-glazed ham and hand rolled pasta to chilli beans on toast and ice cream sandwiches and not forgetting the ever popular Champagne afternoon teas. Our discerning guests will be tempted back time and again to sample our selection of small bar dishes, including truffled mascarpone and ham melts, pulled pork sliders with chipotle and parsley and cured sea trout with beet and horseradish.
+            </p>
+        </div>
+    </section>
+    <section class="about">
+        <h3 class="about__h3">Discovery</h3>
+        <h4 class="about__h4">Our History</h4>
+        <h5 class="about__h5">
+            <a href="#" class="h5--text" >The tale of a timeless classic, constantly reinventing itself without ever losing its essence...</a>
+        </h5>
+        <p class="about__text">
+            Steakville, located  in London, first opened in 1947, under Mario Gallati, former Maître d’ of The Ivy. However, it was on its relaunch in 1981 that it became the world-famous restaurant we know and love. It was then that it became the very model of urban elegance, with its black and white décor, John Swannell photographs and long dining bar. Le Caprice’s menu features modern British dishes prepared with carefully sourced seasonal game, meat, fish and vegetables accompanied by the most sumptuous desserts.
+            In no time, it became a social institution with a devoted international clientele who enjoy its unsurpassed service and lively atmosphere, and the expert marshalling of its famed Director, Jesus Adorno.
+            In September 2011, the restaurant received a design refresh by Martin Brudnizki with touches including black oak panels and a new marble floor, backlit ivory onyx bar and larger reception area. Diners can now watch the world of St James’s go by all day amid royal blue awnings and topiary planters on the terrace. As Le Caprice celebrated its 35th anniversary in 2016, still under the masterful stewardship of Jesus Adorno  and in as rude health as ever, it seems this is one institution that may never fade away.
+        </p>
+        <div class="about__border--outside">
+            <div class="about__border--inside">
+            </div>
+        </div>
+        <div class="about__outside1"></div>
+        <div class="about__inside1"></div>
+    </section>
+    <section class="citation">
+        <p class="citation__text">"Ask not what you can do for your country. Ask what's for lunch."</p>
+        <p class="citation__title">Orson Welles</p>
+    </section>
+    <section class="bigMenu" id="scroll">
+        <article class=" bigMenu__pic">
+            <img src="img/burger1.png" alt="" title="" class="bigMenu__img bigMenu__1">
+            <h4 class="bigMenu__h4">BBQ CHICKEN</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                A Wimpy quarterpounder in a white bun with grated cheese, 2 fried onion rings, bacon, mixed leaf lettuce, tomato & BBQ sauce
+            </p>
+            <p class="bigMenu__price">£5.00</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger2.png" alt="" title="" class="bigMenu__img bigMenu__2">
+            <h4 class="bigMenu__h4">WHOPE SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Southern fried crumbed Quorn ™ served in a white bun with red onion, lettuce, tomato & Wimpy Mayo
+            </p>
+            <p class="bigMenu__price">£4.50</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger3.png" alt="" title="" class="bigMenu__img bigMenu__3">
+            <h4 class="bigMenu__h4">HOMESTYLE BURGER</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Served in a brown bun with cheese, lettuce, onion & our Special Sauce
+            </p>
+            <p class="bigMenu__price">£4.80</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger4.png" alt="" title="" class="bigMenu__img bigMenu__4">
+            <h4 class="bigMenu__h4">BACON SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Breaded chicken fillet served in a white bun with lettuce, tomato & your choice of Wimpy Mayo, BBQ or Firecracker Sauce
+            </p>
+            <p class="bigMenu__price">£5.20</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger1.png" alt="" title="" class="bigMenu__img bigMenu__1">
+            <h4 class="bigMenu__h4">BBQ CHICKEN</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                A Wimpy quarterpounder in a white bun with grated cheese, 2 fried onion rings, bacon, mixed leaf lettuce, tomato & BBQ sauce
+            </p>
+            <p class="bigMenu__price">£5.00</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger2.png" alt="" title="" class="bigMenu__img bigMenu__2">
+            <h4 class="bigMenu__h4">WHOPE SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Southern fried crumbed Quorn ™ served in a white bun with red onion, lettuce, tomato & Wimpy Mayo
+            </p>
+            <p class="bigMenu__price">£4.50</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger3.png" alt="" title="" class="bigMenu__img bigMenu__3">
+            <h4 class="bigMenu__h4">HOMESTYLE BURGER</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Served in a brown bun with cheese, lettuce, onion & our Special Sauce
+            </p>
+            <p class="bigMenu__price">£4.80</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger4.png" alt="" title="" class="bigMenu__img bigMenu__4">
+            <h4 class="bigMenu__h4">BACON SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Breaded chicken fillet served in a white bun with lettuce, tomato & your choice of Wimpy Mayo, BBQ or Firecracker Sauce
+            </p>
+            <p class="bigMenu__price">£5.20</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger1.png" alt="" title="" class="bigMenu__img bigMenu__1">
+            <h4 class="bigMenu__h4">BBQ CHICKEN</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                A Wimpy quarterpounder in a white bun with grated cheese, 2 fried onion rings, bacon, mixed leaf lettuce, tomato & BBQ sauce
+            </p>
+            <p class="bigMenu__price">£5.00</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger2.png" alt="" title="" class="bigMenu__img bigMenu__2">
+            <h4 class="bigMenu__h4">WHOPE SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Southern fried crumbed Quorn ™ served in a white bun with red onion, lettuce, tomato & Wimpy Mayo
+            </p>
+            <p class="bigMenu__price">£4.50</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger3.png" alt="" title="" class="bigMenu__img bigMenu__3">
+            <h4 class="bigMenu__h4">HOMESTYLE BURGER</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Served in a brown bun with cheese, lettuce, onion & our Special Sauce
+            </p>
+            <p class="bigMenu__price">£4.80</p>
+        </article>
+        <article class=" bigMenu__pic">
+            <img src="img/burger4.png" alt="" title="" class="bigMenu__img bigMenu__4">
+            <h4 class="bigMenu__h4">BACON SANDWICH</h4>
+            <h3 class="bigMenu__h3">Big and Meaty</h3>
+            <p class="bigMenu__text">
+                Breaded chicken fillet served in a white bun with lettuce, tomato & your choice of Wimpy Mayo, BBQ or Firecracker Sauce
+            </p>
+            <p class="bigMenu__price">£5.20</p>
+        </article>
+    </section>
+    <section class="ourMenu" id="menu">
+        <h3 class="ourMenu__h3">Steakville</h3>
+        <h4 class="ourMenu__h4">Our Menu</h4>
+        <article class="ourMenu__menu">
+            <article class="ourMenu__container">
+                <img src="img/menu1.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Boneless Buffalo Wings</p>
+                    <p class="ourMenu__text--2">These wing are legendary!</p>
+                </article>
+                <span class="ourMenu__price">£12.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu2.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Poblano Queso spinach</p>
+                    <p class="ourMenu__text--2">Creamy queso is infused with spicy Poblano peppers</p>
+                </article>
+                <span class="ourMenu__price">£14.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu3.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Grilled cedar plank salmon</p>
+                    <p class="ourMenu__text--2">A fresh filet of North Atlantic salmon is rubbed...</p>
+                </article>
+                <span class="ourMenu__price">£13.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu4.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Grilled filet Mignon</p>
+                    <p class="ourMenu__text--2">The most tender of all steaks!</p>
+                </article>
+                <span class="ourMenu__price">£11.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu5.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Mozzarella Moons</p>
+                    <p class="ourMenu__text--2">Mozzarella cheese</p>
+                </article>
+                <span class="ourMenu__price">£10.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu6.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Poblano Queso spinach</p>
+                    <p class="ourMenu__text--2">Creamy queso is infused with spicy Poblano peppers</p>
+                </article>
+                <span class="ourMenu__price">£15.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu7.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Grilled filet Mignon</p>
+                    <p class="ourMenu__text--2">The most tender of all steaks!</p>
+                </article>
+                <span class="ourMenu__price">£14.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu8.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Grilled cedar plank salmon</p>
+                    <p class="ourMenu__text--2">A fresh filet of North Atlantic salmon is rubbed...</p>
+                </article>
+                <span class="ourMenu__price">£17.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu9.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Mozzarella Moons</p>
+                    <p class="ourMenu__text--2">Mozzarella cheese</p>
+                </article>
+                <span class="ourMenu__price">£12.99</span>
+            </article>
+            <article class="ourMenu__container">
+                <img src="img/menu10.png" alt="" class="ourMenu__img">
+                <article class="ourMenu__text">
+                    <p class="ourMenu__text--1">Boneless Buffalo Wings</p>
+                    <p class="ourMenu__text--2">These wing are legendary!</p>
+                </article>
+                <span class="ourMenu__price">£14.99</span>
+            </article>
+        </article>
+    </section>
+    <section class="hours">
+        <h3 class="hours__h3">Your Welcome</h3>
+        <h4 class="hours__h4">Opening Hours</h4>
+        <div class="hours__content">
+            <img src="img/hours.jpg" alt="" class="hours__img">
+            <article class="hours__border">
+                <article class="hours__time">
+                    <h5 class="hours__h5--1">Dinner</h5>
+                    <p class="hours__h5--p">Tuesday to Saturday 5:30 pm til 9:00 pm</p>
+                    <p class="hours__h5--p">Bank Holiday Sundays 6:00 pm til 9:00 pm</p>
+                    <h5 class="hours__h5--2">Lunch</h5>
+                    <p class="hours__h5--p">Friday 12:30 til 2:30 pm</p>
+                    <p class="hours__h5--p">Sunday 12:30 til 4:00 pm</p>
+                </article>
+            </article>
+        </div>
+    </section>
+    <section class="staffBrown">
+        <h3 class="staffBrown__h3">Our Staff</h3>
+        <h4 class="staffBrown__h4">Meet Our Chefs</h4>
+        <article class="staffBrown__content">
+            <article class="staffBrown__content--1">
+                <img src="img/staffCol1.png" alt="" class="staffBrown__img">
+                <div class="staffBrown__border">
+                    <h5 class="staffBrown__name">James T Kirk</h5>
+                    <h6 class="staffBrown__title">Chef</h6>
+                    <hr>
+                </div>
+                    <p class="staffBrown__text">
+                        Having graduated from Westminster Catering College in the early nineties, one of Lawrence’s first jobs was at Café Rouge, where he helped Karen Jones and Roger Myers open five of their first seven units.
+                    </p>
+            </article>
+            <article class="staffBrown__content--2">
+                <img src="img/staffCol2.png" alt="" class="staffBrown__img">
+                <div class="staffBrown__border">
+                    <h5 class="staffBrown__name">Leo McCoy</h5>
+                    <h6 class="staffBrown__title">Cook</h6>
+                    <hr>
+                </div>
+                    <p class="staffBrown__text">
+                        A stalwart of Joe Allen and part of the very fabric of the place, Loe first joined the team at Joe’s sister restaurant, Orso, as a waitress. She worked her way through various roles behind the bar before becoming Maitre.
+                    </p>
+            </article>
+            <article class="staffBrown__content--3">
+                <img src="img/staffCol3.png" alt="" class="staffBrown__img">
+                <div class="staffBrown__border">
+                    <h5 class="staffBrown__name">Hikaru Sulu</h5>
+                    <h6 class="staffBrown__title">Cook</h6>
+                    <hr>
+                </div>
+                    <p class="staffBrown__text">
+                    Hikaru originally trained as an actor at the London Academy of Music & Dramatic Art. As the acting profession is notoriously perilous he eventually fell into the hospitality industry with which he found a natural affinity.
+                    </p>
+            </article>
+        </article>
+    </section>
+    <section class="staffWhite">
+        <h3 class="staffWhite__h3">Our Staff</h3>
+        <h4 class="staffWhite__h4">Meet Our Chefs</h4>
+        <p class="staffWhite__text">
+            Whether in our restaurants or Head Office, we have great teams working together, genuinely caring for one another and most importantly, having fun. No matter which part of our business you join, you'll instantly love the people you get to work with every day.
+        </p>
+        <article class="staffWhite__border">
+            <div class="staffWhite__picture">
+                <img src="img/staff1.jpg" alt="" class="staffWhite__picture--img">
+                <h5 class="staffWhite__h5">James T Kirk</h5>
+                <h6 class="staffWhite__h6">Chef</h6>
+            </div>
+            <div class="staffWhite__picture">
+                <img src="img/staff2.jpg" alt="" class="staffWhite__picture--img">
+                <h5 class="staffWhite__h5">Leo McCoy</h5>
+                <h6 class="staffWhite__h6">Cook</h6>
+            </div>
+            <div class="staffWhite__picture">
+                <img src="img/staff3.jpg" alt="" class="staffWhite__picture--img">
+                <h5 class="staffWhite__h5">Hikaru Sulu</h5>
+                <h6 class="staffWhite__h6">Cook</h6>
+            </div>
+        </article>
+    </section>
+        <section class="reservationBrown">
+            <h3 class="reservationBrown__h3">Reservation</h3>
+            <h4 class="reservationBrown__h4">Book a Table</h4>
+            <i class="fas fa-bone"></i>
+            <form class="reservationBrown__border">
+                <input placeholder="time" class="reservationBrown__input">
+                    <i class="far fa-clock"></i>
+                <input placeholder="date" class="reservationBrown__input">
+                    <i class="far fa-calendar-alt"></i>
+                <input placeholder="people" class="reservationBrown__input">
+                    <i class="fas fa-users"></i>
+                <button type="submit" class="reservationBrown__btn">Book a Table</button>
+            </form>
+    </section>
+    <section class="reservationWhite">
+        <h3 class="reservationWhite__h3">Reservation</h3>
+        <h4 class="reservationWhite__h4">Book a Table</h4>
+        <p class="reservationWhite__text">
+            Members might venture up the lacquered stairway to their very own restaurant, ensconced at the far end of the Club. Here in the calm of green velvets, distinctive marble and still more floristry, you will be doted upon, being served Jeremy’s menu and all manner of classic cocktails and meritorious wines. All proceedings are watched over by those eminent and notorious characters drawn in John Broadley’s magnum opus, The Soho Tapestry.
+        </p>
+        <button type="submit" class="reservationWhite__btn">Book a table</button>
+    </section>
+    <section class="comments">
+        <h3 class="comments__h3">guest comments</h3>
+        <i class="fas fa-comments"></i>
+        <article class="comments__sliderContent">
+            <i class="fas fas1 fa-comments"></i>
+            <div class="comments__slider">
+                <div class="comments__slider--container">
+                    <article class="container__comment">We ate here for dinner on 10/1 and it was really exceptional. The atmosphere is so relaxing after being out in the heat. The scallops were cooked perfectly which is not easy to do. Our service was perfect. Really enjoyed it! <br><br> Date of visit: October 2019</article>
+                    <article class="container__comment">The details in this restaurant are amazing.We sat in the West Wing which I highly recommend. Avoid the ballroom for the crowds and the noise. The rose room is beautiful and would be my 2nd choice. The food was pricey, but excellent. <br><br> Date of visit: September 2019</article>
+                    <article class="container__comment">We went with nine family members. Best dinner in the park. I ordered lamb chops, other has the filet. Wine, escargot, and a sampler dessert. You must spend an evening eating dinner here.<br><br> Date of visit: September 2019</article>
+                </div>
+            </div>
+            <i class="fas fas1 fa-comments"></i>
+        </article>
+    </section>
+    <section class="clients">
+        <h3 class="clients__h3">Our Best Client</h3>
+        <h4 class="clients__h4">Happy Customers</h4>
+        <i class="fab fa-angellist"></i>
+        <p class="clients__text">
+            We recently had some business customers visiting us. Since we work in Arcadia of California, our boss took us to a French fusion restaurant in a nearby shopping center. Among the crowded shops, the outside look of Sesame Grill did not stand out as superb. But, as soon as we entered into the restaurant, some colorful decorations on the ceiling...
+        </p>
+        <h5 class="clients__h5">Brunei Darussalam</h5>
+        <h6 class="clients__h6">HR Director</h6>
+    </section>
+    <form class="subscribe">
+        <h5 class="subscribe__h5">Subscribe to our newsletter</h5>
+        <i class="fas fa-book-open"></i>
+        <input type="email" class="subscribe__email" name="emailaddress" placeholder="email">
+        <button class="subscribe__btn">Send</button>
+    </form>
+    <footer class="footer">
+        <h4 class="footer__h4">find Us</h4>
+        <article class="footer__border">
+            <div class="footer__geo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1044.3056107665138!2d-0.133951707277673!3d51.498696745589456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604dc0c9dbaf5%3A0x69798b4b17183620!2s8%20Broadway%2C%20Westminster%2C%20London%20SW1H%200AZ!5e0!3m2!1spl!2suk!4v1570647338388!5m2!1spl!2suk"  width="1250" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </article>
+        <p class="footer__text">© 2019 kubiakjarek@outlook.com, Inc. All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

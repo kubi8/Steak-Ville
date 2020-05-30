@@ -1,0 +1,14 @@
+html{
+    box-sizing: border-box;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}

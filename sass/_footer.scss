@@ -1,0 +1,26 @@
+.footer{
+    flex-basis: 5vh;
+    width: 100%;
+    background: $bg-color5;
+    padding: 2% 5% 2% 5%;
+    color: $bg-color3;
+    @include flex;
+&__h4{
+    margin: 2% 0 2% 0;
+}
+&__border{
+    border: 1px solid $bg-color3;
+    height: 340px;
+    width: 90%;
+    @include flex;
+}
+&__geo{
+    border: 1px solid white;
+    width: 99%;
+    overflow: hidden;
+    height: 330px;
+}
+&__text{
+    margin: 2% 0 0 0;
+}
+}

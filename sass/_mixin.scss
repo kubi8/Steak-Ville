@@ -1,0 +1,86 @@
+@mixin firstBox {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1.1rem;
+    background: $main-color1;
+    cursor: pointer;
+    margin: 4%;
+    overflow: hidden;
+    text-decoration: none;
+    color: $bg-color1;
+    @include flex;
+&::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2%;
+    left: 0;
+    background-color: $main-color6;
+    transition: .9s;
+}
+&::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    bottom: 0;
+    left: 100%;
+    background: $main-color6;
+    transition: .9s;
+}
+}
+@mixin hamburger{
+    width: 150px;
+    height: 50px;
+    background: $main-color1;
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    color: $main-color2;
+    text-transform: uppercase;
+}
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexSimply{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin secondBox{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1.1rem;
+    background: $main-color1;
+    cursor: pointer;
+    overflow: hidden;
+    @include flex;
+&::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    bottom: -2px;
+    background: $main-color6;
+    transition: .9s;
+}
+&::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    right: -2px;
+    background: $main-color6;
+    transition: .9s;
+}
+}

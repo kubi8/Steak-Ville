@@ -1,0 +1,92 @@
+.ourMenu{
+    flex-basis: 90vh;
+    width: 100%;
+    background: $bg-color7;
+    padding: 5%;
+&__menu{
+    // border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+&__container{
+    flex-basis: 100%;
+    border: 1px solid $main-color1;
+    padding: 2%;
+    display: flex;
+@media (min-width: 800px){
+    flex-basis: 50%;
+}
+@media (min-width: 1280px){
+    height: 200px;
+}
+}
+&__img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+&__h3{
+    text-align: center;
+    font-family: wildYouth;
+    color: $main-color1;
+    font-size: 2rem;
+
+}
+&__h4{
+    text-align: center;
+    font-family: average;
+    color: $bg-color3;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+
+}
+&__text{
+    flex-grow: 1;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+&--1{
+    color: $bg-color3;
+    font-size: .8rem;
+    padding: 5%;
+    text-transform: uppercase;
+@media (min-width: 640px){
+    font-size: 1rem;
+}
+// @media (min-width: 1024px){
+//     font-size: 1.5rem;
+// }
+@media (min-width: 1280px){
+    font-size: 1.2rem;
+}
+}
+&--2{
+    color: $main-color1;
+    font-size: .6rem;
+    padding: 10%;
+@media (min-width: 640px){
+    font-size: .8rem;
+}
+// @media (min-width: 1024px){
+//     font-size: 1rem;
+// }
+@media (min-width: 1280px){
+    font-size: 1rem;
+}
+}
+}
+&__price{
+    flex-basis: 25%;
+    // border: 1px solid blue;
+    color: $bg-color3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+@media (min-width: 640px){
+    font-size: 3rem;
+}
+}
+}

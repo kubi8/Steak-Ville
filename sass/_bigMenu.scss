@@ -1,0 +1,49 @@
+.bigMenu{
+    width: 100%;
+    background: $bg-color2;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+&__pic{
+    border: 1px solid $bg-color7;
+    flex-basis: 260px;
+    height: 320px;
+    max-width: 260px;
+    max-height: 320px;
+    position: relative;
+    padding: 2%;
+    margin: 10% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+&__img{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -220%);
+}
+
+&__h4{
+    font-weight: lighter;
+    flex-basis: 100%;
+    margin-top: 25%;
+}
+&__h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    color: $main-color1;
+    flex-basis: 100%;
+}
+&__text{
+    font-size: 1rem;
+}
+&__price{
+    font-weight: bold;
+    font-size: 2rem;
+}
+}

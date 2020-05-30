@@ -1,0 +1,30 @@
+.reservationWhite{
+    flex-basis: 45vh;
+    width: 100%;
+    background: $bg-color2;
+    padding: 5%;
+    @include flex;
+&__h3{
+    font-family: wildYouth;
+    color: $main-color1;
+}
+&__h4{
+    margin: 3% 0 2% 0;
+    font-size: 1.5rem;
+}
+&__text{
+    font-size: .7rem;
+    text-align: justify;
+    margin: 2% 5% 2% 5%;
+}
+&__btn{
+    @include firstBox;
+&:hover::after{
+    transform: translateX(-150px);
+    }
+&:hover::before{
+    transform: translateY(-50px);
+}
+}
+
+}

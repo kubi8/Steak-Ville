@@ -1,0 +1,53 @@
+.reservationBrown{
+    flex-basis: 60vh;
+    width: 100%;
+    background: $bg-color5;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+@media (min-width: 640px){
+    flex-basis: 65vh;
+}
+&__h3{
+    font-family: wildYouth;
+    color: $main-color1;
+}
+&__h4{
+    font-size: 1.8rem;
+    color: $bg-color3;
+}
+&__border{
+    border: 1px solid $main-color1;
+    max-width: 350px;
+    padding: 0 2% 0 2%;
+    // @include flex;
+    position: relative;
+}
+&__input{
+    border: 1px solid $main-color1;
+    background: $main-color3;
+    width: 88%;
+    padding: 2% 5% 2% 2%;
+    margin: 5% 0 5% 0;
+}
+&__btn{
+    position: absolute;
+    left: calc(50% - 150px / 2);
+    @include firstBox;
+&:hover::before{
+    transform: translateY(-50px);
+}
+&:hover::after{
+    transform: translateX(-150px);
+}
+}
+}
+.fa-bone{
+    color: $main-color1;
+    font-size: 2rem;
+}
+.fa-users, .fa-calendar-alt, .fa-clock{
+    color: $bg-color3;
+    font-size: 1rem;
+}

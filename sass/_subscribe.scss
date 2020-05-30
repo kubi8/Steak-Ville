@@ -1,0 +1,42 @@
+.subscribe{
+    flex-basis: 25vh;
+    width: 100%;
+    background: $bg-color6;
+    // background: $main-color1;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+&__h5{
+    font-size: 1.5rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+&__email{
+    padding: 10px;
+    width: 80%;
+    margin: 2%;
+    margin: 0 auto;
+@media (min-width: 768px){
+    width: 70%;
+    height: 50px;
+    margin-top: 5%;
+}
+}
+&__btn{
+    @include firstBox;
+    margin: 5% auto;
+&:hover::after{
+    transform: translateX(-150px);
+}
+&:hover::before{
+    transform: translateY(-50px);
+}
+}
+}
+.fa-book-open{
+    margin: 2%;
+    color: $main-color1;
+    font-size: 2rem;
+    flex-basis: 100%;
+    text-align: center;
+}

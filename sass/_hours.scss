@@ -1,0 +1,73 @@
+.hours{
+    flex-basis: 50vh;
+    width: 100%;
+    background: $bg-color5;
+    padding: 5%;
+&__h3{
+    font-family: wildYouth;
+    color: $main-color1;
+    text-align: center;
+    font-size: 1.6rem;
+}
+&__h4{
+    color: $bg-color3;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    padding: 2% 0;
+    text-align: center;
+}
+&__content{
+    // border: 1px solid red;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+@media (min-width: 600px){
+    justify-content: flex-end;
+}
+@media (min-width: 1280px){
+    justify-content: center;
+}
+}
+&__img{
+    // border: 1px solid blue;
+    // width: 20%;
+    display: none;
+@media (min-width: 600px){
+    display: block;
+    max-width: 1200px;
+}
+    // background-image: url('../img/hours.jpg');
+    // background-position: center;
+    // background-size: cover;
+
+}
+&__border{
+    // border: 1px solid green;
+    flex-basis: 300px;
+    height: 200px;
+    min-width: 300px;
+    min-height: 200px;
+    background: $bg-color3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&__time{
+    background: $bg-color3;
+    border: 1px solid;
+    // margin: 10px;
+    flex-basis: 285px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+&__h5--p{
+    font-size: .9rem;
+
+}
+&__h5--2{
+    margin-top: 30px;
+}
+}

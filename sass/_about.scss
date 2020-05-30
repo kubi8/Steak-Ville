@@ -1,0 +1,83 @@
+.about{
+    flex-basis: 40vh;
+    width: 100%;
+    background: $main-color3;
+    padding: 10%;
+    text-align: justify;
+    position: relative;
+&__text{
+    display: none;
+}
+&__h3{
+    color: $main-color1;
+    font-size: 2.3rem;
+    font-family: wildYouth;
+}
+&__h4{
+    color: $bg-color3;
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+&__border--outside{
+@media (min-width: 1280px){
+    position: absolute;
+    border-right: 2px solid $main-color1;
+    border-bottom: 2px solid $main-color1;
+    bottom: 60px;
+    right: 60px;
+    width: 150px;
+    height: 300px;
+}
+}
+&__border--inside{
+@media (min-width: 1280px){
+    position: absolute;
+    border-right: 2px solid $main-color1;
+    border-bottom: 2px solid $main-color1;
+    bottom: 6px;
+    right: 8px;
+    width: 120px;
+    height: 260px;
+}
+}
+.about__h5{
+@media (min-width: 1280px){
+    display:none;
+}
+.h5--text{
+@media (max-width: 1279px){
+    color: $bg-color3;
+    text-decoration: none;
+}
+}
+}
+&__text{
+@media (min-width: 1280px){
+    display: block;
+    color: $bg-color3;
+}
+}
+&__outside1{
+@media (min-width: 1280px){
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 27px;
+    right: 27px;
+    border-top: 2px solid $main-color1;
+    border-left: 2px solid $main-color1;
+}
+}
+&__inside1{
+@media (min-width: 1280px){
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 36px;
+    right: 36px;
+    border-top: 2px solid $main-color1;
+    border-left: 2px solid $main-color1;
+}
+}
+}

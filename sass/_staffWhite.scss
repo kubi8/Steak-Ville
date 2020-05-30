@@ -1,0 +1,51 @@
+.staffWhite{
+    flex-basis: 80vh;
+    width: 100%;
+    background: $bg-color2;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+&__h3{
+    font-family: wildYouth;
+    color: $main-color1;
+    margin: 2% 0 0 0;
+}
+&__h4{
+    font-size: 1.8rem;
+
+}
+&__text{
+    margin: 5% 0 5% 0;
+    font-size: .7rem;
+    text-align: justify;
+}
+&__border{
+    // padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+&__picture{
+    // border: 1px solid $bg-color5;
+    text-align: center;
+    width: 320px;
+    height: 340px;
+    // margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+&--img{
+    margin: 4px 0;
+@media (min-width: 700px){
+    margin: 4px;
+}
+}
+}
+&__h5{
+    font-size: 1.5rem;
+}
+&__h6{
+    font-size: 1.2rem;
+}
+}

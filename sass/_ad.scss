@@ -1,0 +1,72 @@
+.ad{
+    flex-basis: 50vh;
+    width: 100%;
+    background: $main-color3;
+    background-image: url(../img/slider5.jpg);
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    .ad__slider{
+
+        width: 100%;
+        overflow: hidden;
+        // width: 980px;
+        // height: 100%;
+        // position: absolute;
+        // left: calc(50% - 980px / 2);
+        @media (min-width:960px) and (orientation: landscape){
+        width: 980px;
+        height: 100%;
+        position: absolute;
+        left: calc(50% - 980px / 2);
+        }
+        @media (max-width: 960px) {
+
+            display: none;
+        }
+        .slider__content{
+            // overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            .slider--pic{
+                position: absolute;
+            }
+        }
+
+    }
+
+&__btn{
+    left: calc(50% - 150px /2);
+    bottom: 30%;
+    @include secondBox;
+    text-decoration: none;
+    color: $bg-color1;
+&:hover::before{
+    transform: translateY(-52px);
+}
+&:hover::after{
+
+    transform: translateX(-152px);
+}
+}
+
+.ad__text{
+    position: absolute;
+    font-size: 1.8rem;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 1vh;
+    color: $bg-color2;
+@media (orientation: landscape){
+    color: $bg-color2;
+}
+@media (min-width: 1024px){
+    bottom: 5vh;
+}
+}
+}

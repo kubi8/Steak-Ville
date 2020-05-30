@@ -1,0 +1,59 @@
+.address{
+    flex-basis: 3vh;
+    line-height: 3vh;
+    width: 100%;
+    background: $main-color1;
+    font-family: 'Average', serif;
+    font-size: .7rem;
+    text-align: center;
+.address__icons{
+    display: none;
+    cursor: pointer;
+// .fa-facebook-square{
+//     color: #4267b2;
+// }
+// .fa-twitter-square{
+//     color: #1da1f2;
+// }
+// .fa-youtube{
+//     color: #ff0000;
+// }
+// .fa-facebook-square:visited{
+//     color: #4267b2
+// }
+// .fa-twitter-square:visited{
+//     color: #1da1f2;
+// }
+// .fa-youtube::visited{
+//     color: #ff0000;
+// }
+.fab{
+    color: $bg-color7;
+}
+.fab::visited{
+    color: $bg-color7;
+}
+@media (min-width: 1024px){
+    display: block;
+    flex-basis: 8vw;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 460px) and (max-width: 1024px){
+    flex-basis: 10vw;
+}
+}
+@media (min-width: 460px){
+    line-height: 3vh;
+}
+@media (min-width: 460px) and (max-width:1024px) and (orientation:landscape){
+    flex-basis: 3vw;
+    line-height: 3vw;
+}
+@media (min-width: 1024px){
+    display: flex;
+    justify-content: space-around;
+}
+}

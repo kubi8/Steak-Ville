@@ -1,0 +1,18 @@
+.citation{
+    flex-basis: 25vh;
+    width: 100%;
+    background: $bg-color7;
+    padding: 10%;
+&__text{
+    color: $bg-color3;
+    text-align: center;
+}
+&__title{
+    font-family: wildYouth;
+    font-size: 2rem;
+    color: $main-color1;
+    margin-top: 3%;
+    float: right;
+    margin-right: 20%;
+}
+}
